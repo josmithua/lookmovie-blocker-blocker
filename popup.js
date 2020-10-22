@@ -5,7 +5,6 @@ let toggleChkbox = document.getElementById('toggleBlockerBlocker');
  * right 🙄
  */
 function toggleBlockerBlocker(enable) {
-  console.log('[toggleBlockerBlocker]', enable);
   chrome.tabs.executeScript({
     code: `document.body.classList.toggle("wellcome-boy", ${!enable})`,
   });
